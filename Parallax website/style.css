@@ -11,18 +11,17 @@ html,body{
     background-image: url(images/image1.jpg);
     min-height: 100%;
 }
-
 .pimg2{
     background-image: url(images/image2.jpg);
     min-height: 400px;
 }
-
 .pimg3{
     background-image: url(images/image3.jpg);
     min-height: 400px;
 }
 
-.pimg1 ,.pimg2 , .pimg3{
+.pimg1 , .pimg2 , .pimg3{
+
     position: relative;
     background-position: center;
     background-size: cover;
@@ -35,16 +34,16 @@ html,body{
     top: 50%;
     width: 100%;
     text-align: center;
+    color:black;
     font-size: 27px;
-    color: black;
-    letter-spacing: 9px;
+    letter-spacing: 8px;
     text-transform: uppercase;
 }
 
-.textbg{
-    background-color: #313534;
+.textBg{
+    background: #313534;
     color: white;
-    padding: 20px;
+    padding: 25px;
 }
 
 .section{
@@ -53,12 +52,11 @@ html,body{
 }
 
 .section-light{
-    background-color: #f4f4f4;
-    color: #666;
+    background-color: white;
+    color: gray;
 }
 
 .section-dark{
-    background-color: #282e34;
-    color: #ddd;
+    background-color: rgb(52, 49, 49);
+    color: white;
 }
-
