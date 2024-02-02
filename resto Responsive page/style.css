@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* navbar */
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #fc036b;
+    padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.active{
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://aipict.com/wp-content/uploads/2023/09/snowy-mountains01.png");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background:#fc036b;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    width: 40px;
+    display: none;
+}
+
+/* mobile devices */
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        border: 2px solid black;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(44, 44, 84);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+}
