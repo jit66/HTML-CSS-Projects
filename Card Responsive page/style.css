@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.training-section{
+    background: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg") center;
+    width: 100%;
+    background-size: cover;
+}
+
+.training-section h1{
+    text-align: center;
+    padding: 25px 0;
+    color: whitesmoke;
+}
+
+.container{
+    width: 1170px;
+    margin: auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.container img{
+    max-width: 80px;
+    height: 56px;
+}
+
+.card-items{
+    flex-basis: 23%;
+    /* background-color: white; */
+    text-align: center;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+}
+
+.card-items h3{
+    padding: 10px 0px;
+}
+
+.card-items p{
+    font-size: 14px;
+    padding: 14px;
+    color: black;
+}
+
+.card-items button{
+    padding: 10px 25px;
+    background: rgb(172, 158, 139);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.card-items:hover{
+    background: gray
+}
+
+.card-items:hover h3,p{
+    color: white;
+}
+
+.card-items:hover button{
+    background: whitesmoke;
+    color: black;
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:768px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-items{
+        margin: 10px;
+    }
+}
+
